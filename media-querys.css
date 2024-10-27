@@ -1,0 +1,312 @@
+/*------------  MEDIA QUERYS NOVEDADES --------------*/
+
+
+@media screen and (width<1220px){
+    
+    .container-novedades{
+        display: block;
+        height: 1100px;
+
+    }
+
+    #article1{
+
+        float: left;
+
+    }
+
+    
+    #article2{
+
+        float: left;
+
+    }
+
+}
+
+@media screen and (width<885px) {
+    
+    .container-novedades{
+        
+        height: 1500px;
+
+    }
+
+    .article3{
+
+        float: left;
+        margin-top: 200px;
+    }
+
+}
+
+/*------------  MEDIA QUERYS SLIDER --------------*/
+@media screen and (width>1800px) {
+ 
+    #slide1{
+      
+       margin-left: 500px;
+      
+    
+    }
+
+    #slide1 #precio{
+    
+        margin-right: 280px;
+           
+       
+       }
+   
+    
+    #slide2{
+    
+        width: 2000px;
+        margin-left: 500px;
+    
+    }
+
+    #slide2 #precio{
+    
+        margin-right: 280px;
+           
+       
+       }
+   
+    
+    #slide3{
+    
+        width: 2000px;
+        margin-left: 500px;
+        
+    
+    }
+    
+    #slide3 #precio{
+    
+     margin-right: 280px;
+        
+    
+    }
+
+    ul.slider{
+
+        width: 1000px;
+
+    }
+
+    
+  
+}
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+@media screen and (width>1600px) {
+ 
+    #slide1{
+    
+       height: 300px;
+      
+    
+    }
+    
+    #slide2{
+    
+        width: 2000px;
+        
+    
+    }
+    
+    #slide3{
+    
+        width: 2000px;
+       
+    
+    }
+
+    ul.slider{
+
+        width: 1000px;
+
+    }
+    
+}
+
+
+
+@media screen and (width>1500px) {
+ 
+    #slide1{
+    
+        width: 1000px;
+        transform: translateX(230px) translateY(100px);
+    
+    }
+    
+    #slide2{
+    
+        width: 1000px;
+        transform: translateX(230px) translateY(100px);
+    
+    }
+    
+    #slide3{
+    
+        width: 1000px;
+        transform: translateX(230px) translateY(100px);
+    
+    }
+
+    ul.menu{
+
+        transform: translateX(40px) translateY(100px);
+
+    }
+    
+}
+    
+
+
+@media screen and (width>1280px) {
+ 
+#slide1{
+
+    width: 1000px;
+
+}
+#slide1 #precio{
+   margin-right: 300px;
+}
+
+#slide2{
+
+    width: 1000px;
+
+}
+
+#slide2 #precio{
+    margin-right: 300px;
+ }
+
+#slide3{
+
+    width: 1000px;
+
+}
+
+#slide3 #precio{
+    margin-right: 300px;
+ }
+
+}
+
+
+
+
+
+
+@media screen and (width<1100px) {
+    
+    #slide1{
+
+        transform: translateX(-5px) translateY(100px);
+        margin-left: 40px;
+    }
+
+    #slide2{
+
+        transform: translateX(-5px) translateY(100px);
+        margin-left: 40px;
+
+    }
+
+    #slide3{
+
+        transform: translateX(-5px) translateY(100px);
+        margin-left: 40px;
+
+    }
+
+    ul.menu{
+
+        transform: translateX(-5px) translateY(100px);
+
+    }
+    
+}
+
+
+@media screen and (width<680px) {
+
+    #slide1{
+
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    #slide2{
+
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    #slide3{
+
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    ul.slider{
+
+        width: 500px;
+
+    }
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+    ul.menu{
+
+        width: 600px;
+        margin-left: 50px;
+
+    }
+    
+}
+
+@media screen and (width<639px) {
+
+    #slide1{
+
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    #slide2{
+
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    #slide3{
+
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    ul.slider{
+
+        width: 100px;
+
+    }
+
+    ul.menu{
+
+        width: 300px;
+        margin-left: 50px;
+
+    }
+    
+}
+
+
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */

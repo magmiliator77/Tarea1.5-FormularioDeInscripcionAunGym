@@ -1,0 +1,1351 @@
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    scroll-behavior: smooth;
+
+   
+
+}
+
+/* MODAL  */
+
+.modal{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgb(214, 214, 214);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    animation: modal 2s 1s forwards; /* CUANDO LA ANIAMCOIN TERMINE SE QUEDA Y NO DESAPARECE*/
+
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+   
+}
+
+
+
+#cerrar{
+    display: none;
+}
+
+#cerrar + label{
+
+    text-align: center;
+    position: fixed;
+    color: white;
+    font-size: 25px;
+    z-index: 101;
+    background-color: darkred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+  
+    animation: modal 1s 3s forwards; /* CUANDO LA ANIAMCOIN TERMINE SE QUEDA Y NO DESAPARECE*/
+    
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+#cerrar + label:hover{
+
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal{
+
+    display: none;
+
+}
+
+@keyframes modal{
+
+    100%{
+
+        visibility: visible;
+        opacity: 1;
+    
+
+    }
+
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+}
+
+#novedades{
+
+    scroll-margin-top: 90px;
+
+    /* para que el nav no tape el div de novedades al hacer click en su enlace */
+
+}
+
+#instalaciones{
+
+    scroll-margin-top: 90px;
+   
+}
+
+
+#precios{
+
+    scroll-margin-top: 90px;
+
+    /* para que el nav no tape el div de novedades al hacer click en su enlace */
+
+}
+
+#subscripciones{
+
+    scroll-margin-top: 90px;
+   
+}
+
+a{
+
+   text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+
+    text-decoration: none;
+    color: #0074f8;
+ 
+ }
+
+
+/* main */
+
+.main{
+   
+    width: 95%;
+    height: 7000px;
+    margin-left: 1em;
+
+
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+    border-bottom: 3px solid black;
+    background-color: #26272b;
+
+}
+
+/* div instalaciones */
+
+.div-instalaciones{
+
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 300px;
+    margin-top: 90px;
+
+    background-image: url(recursos/instalaciones/editadas/mataro_bodybuilding_center_destacada-1.jpg);
+    background-position: 40px;
+    background-size: cover;
+    filter: blur(2px);
+    
+    
+
+}
+
+.text-instalaciones{
+
+    display: flex;
+    justify-content: center;
+    transform: translateY(-160px);
+
+    color: aliceblue;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+/* ZONA DE CARDIO */
+
+.container-cardio{
+
+    
+    width: auto;
+    height: 320px;
+    border-radius: 20px;
+    background-color: #004694;
+    margin-bottom: 30px;
+
+
+}
+
+.zona-cardio{
+
+    width: auto;
+    height: 30px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+
+    background-color: #868585;
+
+}
+
+.img-cardio{
+    float: left;
+    width: 340px;
+    margin: 10px;
+
+
+}
+
+.text-cardio{
+    margin: 10px;
+    transform: translateY(50px);
+    width: auto;
+    height: 100px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+/* ZONA DE FUERZA */
+
+.container-fuerza{
+
+    width: auto;
+    height: 320px;
+    border-radius: 20px;
+    background-color: #004694;
+    margin-bottom: 30px;
+
+}
+
+.zona-fuerza{
+
+    width: auto;
+    height: 30px;
+    text-align: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    
+
+    border-radius: 20px 20px 0px 0px;
+    background-color: #868585;
+
+}
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+.img-fuerza{
+    float: right;
+    width: 350px;
+    margin: 10px;
+
+
+}
+
+.text-fuerza{
+    margin: 10px;
+    transform: translateY(50px);
+    width: auto;
+    height: 100px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+/* ZONA DE DEADLIFTING */
+
+.container-deadlifting{
+
+    width: auto;
+    height: 320px;
+    border-radius: 20px;
+
+    background-color: #004694;
+
+}
+
+
+
+.zona-deadlifting{
+
+    width: auto;
+    height: 30px;
+    text-align: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+
+    border-radius: 20px 20px 0px 0px;
+    background-color: #868585;
+
+}
+
+.img-deadlifting{
+    float: left;
+    transform: translateY(10px);
+    width: 390px;
+    margin: 10px;
+
+
+}
+
+.text-deadlifting{
+    margin: 10px;
+    transform: translateY(50px);
+    width: auto;
+    height: 100px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+
+/* NOVEDADES */
+
+.container-novedades{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: auto;
+    height: 900px;
+
+    
+
+}
+
+/* ARTICULOS */
+
+#article1{
+    margin: 20px;
+    width: 400px;
+    height: 390px;
+
+    border-radius: 20px 20px 0px 0px;
+    background-color: #868585;
+
+}
+
+.text-article1{
+    width: auto;
+    height: 140px;
+    padding: 10px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: #004694;
+
+}
+
+/* boton not by me */
+
+    
+.button-5 {
+    transform: translateX(10px) translateY(10px);
+      align-items: center;
+      background-clip: padding-box;
+      background-color: #fa6400;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+}
+    
+.button-5:hover,
+.button-5:focus {
+      background-color: #fb8332;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+    
+.button-5:hover {
+      transform: translateY(15px) translateX(15px);
+ }
+    
+.button-5:active {
+      background-color: #c85000;
+      box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+      transform: translateY(15px) translateX(15px);
+}
+
+
+
+
+#article2{
+    margin: 20px;
+    width: 300px;
+    height: 590px;
+ 
+    border-radius: 20px 20px 0px 0px;
+    background-color: #868585;  
+    
+
+}
+
+.text-article2{
+    width: auto;
+    height: 180px;
+    padding: 10px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: #004694;
+
+}
+
+.article3{
+
+    margin: 20px;
+    width: 300px;
+    height: 390px;
+    
+    border-radius: 20px 20px 0px 0px;
+    background-color: #868585;
+
+    
+}
+
+
+/* CONTENEDOR DE LOS  PRECIOS */
+
+.container-precios{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 900px;
+    border-radius: 20px 20px 10px 10px;
+    background-color: #004694;
+
+}
+
+.cuota{
+    
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+    padding-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+
+    background-color: #868585;
+
+}
+
+/* slider CUOTAS */
+.container{
+    
+    width: auto;
+    height: 600px;
+    
+    
+    transform: translateY(100px);
+    background-color: aliceblue;
+    scroll-margin-top: 100px;
+    font-size: medium;
+
+}
+
+
+
+ul, li{
+
+    margin: 0px;
+    padding: 0px;
+    
+    list-style: none;
+}
+
+ul.slider{
+    
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+
+
+ul.slider li{
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit; /* hereda las caracteristicas del elemento padre */
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+
+    pointer-events: none; /* Evita interacciones en capas no visibles */
+
+}
+
+/* 
+ul.slider li img{
+
+width: 100%;
+height: 300px;
+object-fit: cover;
+
+}
+ */
+
+ul.slider li:first-child{
+
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1; 
+
+    pointer-events: auto; /* Activa la interacción solo para la capa activa */
+
+}
+
+
+
+
+.menu{
+
+text-align: center;
+margin: 20px;
+transform: translateX(50px) translateY(100px);
+
+}
+
+.menu li{
+display: inline-block;
+text-align: center;
+}
+
+.menu li a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
+}
+
+.menu li a:hover{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f52414;
+    transition:  0.2s;
+    width: 30px;
+    height: 30px;
+    font-size: x-large;
+}
+
+#slide1{
+    width: 100%;
+    transform: translateX(200px) translateY(100px);
+    scroll-margin-top: 200px;
+    
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#slide1 h1{
+    color: white;
+    padding: 10px;
+    background-color: #004694;
+    
+
+}
+
+#slide1 p{
+    
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+}
+
+#slide1 #precio{
+    
+    float: right;
+    margin-right: 120px;
+    transform: translateY(-120px);
+
+    font-size: 60px;
+    color: red;
+
+}
+
+
+
+#slide1 #enlace1{
+    position: absolute;
+    padding: 10px;
+    width: 200px;
+    margin-left: 240px;
+    
+
+    
+    background-color: #66b913;
+
+}
+
+
+#slide1 #enlace1:hover{
+    transition: all 0.3s;
+    
+    background-color: #f52414;
+    border-radius: 10px;
+    pointer-events: auto;
+    color: #004694;
+}
+
+
+
+
+#slide2{
+    transform: translateX(200px) translateY(100px);
+    scroll-margin-top: 200px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+#slide2 h1{
+    color: white;
+    padding: 10px;
+    background-color: #004694;
+    
+
+}
+
+#slide2 p{
+    
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+}
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+#slide2 #precio{
+    
+    float: right;
+    margin-right: 120px;
+    transform: translateY(-120px);
+
+    font-size: 60px;
+    color: red;
+
+}
+
+
+
+#slide2 #enlace2{
+    position: absolute;
+    padding: 10px;
+    width: 200px;
+    margin-left: 240px;
+
+    
+    background-color: #66b913;
+
+}
+
+
+#slide2 #enlace2:hover{
+    transition: all 0.3s;
+    
+    background-color: #f52414;
+    border-radius: 10px;
+    color: #004694;
+}
+
+
+
+
+#slide3{
+    transform: translateX(200px) translateY(100px);
+    scroll-margin-top: 200px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+#slide3 h1{
+    color: white;
+    padding: 10px;
+    background-color: #004694;
+    
+
+}
+
+#slide3 p{
+    
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+}
+
+#slide3 #precio{
+    
+    float: right;
+    margin-right: 120px;
+    transform: translateY(-120px);
+
+    font-size: 60px;
+    color: red;
+
+}
+
+
+
+#slide3 #enlace3{
+    position: absolute;
+    padding: 10px;
+    width: 200px;
+    margin-left: 240px;
+
+    
+    background-color: #66b913;
+
+}
+
+
+#slide3 #enlace3:hover{
+    transition: all 0.3s;
+    
+    background-color: #f52414;
+    border-radius: 10px;
+    color: #004694;
+}
+
+
+/* SUBSCRIPCIONES FORMULARIO */
+
+
+.subcripcionesForm{
+
+    width: 100%;
+    height: 2100px;
+
+
+
+
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+
+
+
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+form{
+    margin-top: 20px;
+    height: 2000px;
+    background-color: #004694;
+
+}
+
+.datosPersonales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 400px;
+   
+
+}
+
+.direccionEntrega{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: auto;
+    height: 300px;
+    
+
+}
+
+.datosBancarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: auto;
+    height: 300px;
+    
+
+}
+
+.datosExtra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: auto;
+    height: 500px;
+  
+
+} 
+
+legend{
+
+    margin-top: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+
+}
+
+input{
+    height: 20px;
+    border-radius: 5px;
+
+}
+
+form label{
+
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+form #nombre{
+
+    width: 200px;
+    
+
+}
+
+/* 
+form #labelNombre{
+
+    margin-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+*/
+
+
+
+form #apellidos{
+
+    width: 200px;
+
+}
+
+/* form #labelApellidos{
+
+    margin-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+} */
+
+form #telefono{
+
+    width: 200px;
+
+}
+/* 
+form #labelTelefono{
+
+    margin-right: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+ */
+
+
+.container-datosPersonales{
+
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.container-direccionEntrega{
+
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.container-datosBancarios{
+
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container-datosBancarios2{
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 120px;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container-deportesPracticados{
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 180px;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-deportesPracticados label{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+
+}
+
+.container-horario{
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 200px;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+.tipo1{
+
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tipo2{
+
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tipo3{
+
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* COMENTARIOS */
+
+.comentarios{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 20px;
+    padding: 5px;
+    background-color: forestgreen;
+    border: 2px solid white;
+    border-radius: 10px;
+
+
+}
+
+
+/* TEXTAREA */
+
+#mensaje{
+
+    resize: none;
+    
+}
+
+
+/* BOTONES DEL FORMULARIO ENVIAR Y RESETEAR */
+
+
+.container-botonesForm{
+
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+
+}
+
+
+#botonForm1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+    width: 100px;
+    height: 40px;
+
+}
+
+#botonForm1:hover{
+
+    transition: all 0.3s;
+    background-color: #72da0b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /* CAMBIA EL RATON PARA HACER CLICK*/
+    border: 3px solid white;
+
+}
+
+
+#botonForm2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+    width: 100px;
+    height: 40px;
+
+}
+
+#botonForm2:hover{
+
+    transition: all 0.3s;
+    background-color: #f11909;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; /* CAMBIA EL RATON PARA HACER CLICK*/
+    border: 3px solid white;
+
+}
+
+
+
+form{
+
+    border-radius: 10px;
+}
+
+
+/* FOOTER CON CSS GRID ---->>>>> */
+
+footer{
+
+
+    display: grid;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+   
+   
+    width: 100%;
+    height: 350px;
+
+    background-color: #26272b;
+
+}
+
+.about-footer{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+
+}
+
+
+.about-footer h2{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+.about-footer p{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #616162; 
+
+}
+
+.mentions-footer{
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+
+}
+
+.mentions-footer h2{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+
+.mentions-footer a{
+    
+   margin-bottom: 15px;
+   padding: 5px;
+   
+
+}
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
+
+.mentions-footer a:hover{
+
+    background-color:#004694;
+   
+    border-radius: 30px;
+    height: 50px;
+    transition: all 0.5s;
+ 
+}
+
+.quickLinks-footer{
+
+    padding: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    width: auto;
+
+}
+
+.quickLinks-footer h2{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+.quickLinks-footer a{
+
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #616162;
+    margin-bottom: 10px;
+
+}
+
+.quickLinks-footer a:hover{
+
+    list-style: none;
+    font-size: 20px;
+    color: #1717ff;
+
+    transition: all 0.3s;
+
+}
+
+.redesSociales img{
+
+    margin-right: 10px;
+
+}
+
+.redesSociales #img1:hover{
+
+    background-color: #fff;
+    border-radius: 200px;
+    transition: all 0.3s;
+    box-shadow: 0px 10px 10px black;
+}
+
+.redesSociales #img2:hover{
+
+    background-color: #fff;
+    border-radius: 200px;
+    transition: all 0.3s;
+    box-shadow: 0px 10px 10px black;
+
+}
+
+
+
+
+
+ 
+
+.subcripciones{
+
+    margin-right: 20px;
+
+}
+
+/* CELIA GMY LOGO */
+
+#celia-gym{
+
+    width: 150px;
+
+
+}
+
+
+/* MIGUEL TORRES MARTÍNEZ */
+
+.about-footer #miguel:hover{
+
+    cursor: url(recursos/CURSOR-PERSONALIZADO/image-removebg-preview\ \(29\).png),auto;
+
+}
+
+
+
+/*  CREADO POR MIGUEL TORRES MARTINEZ  */
